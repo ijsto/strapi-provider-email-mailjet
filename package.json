@@ -1,5 +1,5 @@
 {
-  "name": "strapi-provider-email-nodemailer",
+  "name": "@ndokutovich/strapi-provider-email-nodemailer",
   "version": "1.0.2",
   "description": "Nodemailer provider for Strapi with attacments support for latest Strapi versions.",
   "main": "./lib",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yutikom/strapi-provider-email-nodemailer.git"
+    "url": "git+https://github.com/ndokutovich/strapi-provider-email-nodemailer.git"
   },
   "keywords": [
     "Strapi",
@@ -26,10 +26,10 @@
   "author": "Yurii Tykhomyrov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yutikom/strapi-provider-email-nodemailer/issues"
+    "url": "https://github.com/ndokutovich/strapi-provider-email-nodemailer/issues"
   },
   "strapi": {
     "isProvider": true
   },
-  "homepage": "https://github.com/yutikom/strapi-provider-email-nodemailer#readme"
+  "homepage": "https://github.com/ndokutovich/strapi-provider-email-nodemailer#readme"
 }
