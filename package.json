@@ -1,13 +1,13 @@
 {
-  "name": "@ndokutovich/strapi-provider-email-nodemailer",
-  "version": "1.0.2",
-  "description": "Nodemailer provider for Strapi with attacments support for latest Strapi versions.",
+  "name": "@sboutet06/strapi-provider-email-mailjet",
+  "version": "1.0.0",
+  "description": "Mailjet provider for Strapi with attachments support for latest Strapi versions.",
   "main": "./lib",
   "directories": {
     "lib": "./lib"
   },
   "dependencies": {
-    "nodemailer": "^5.1.1"
+    "node-mailjet": "https://github.com/mailjet/mailjet-apiv3-nodejs.git#v3.3.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ndokutovich/strapi-provider-email-nodemailer.git"
+    "url": "git+https://github.com/sboutet06/strapi-provider-email-mailjet.git"
   },
   "keywords": [
     "Strapi",
@@ -23,13 +23,13 @@
     "Email",
     "Provider"
   ],
-  "author": "Yurii Tykhomyrov",
+  "author": "Sébastien Boutet",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ndokutovich/strapi-provider-email-nodemailer/issues"
+    "url": "https://github.com/sboutet06/strapi-provider-email-mailjet/issues"
   },
   "strapi": {
     "isProvider": true
   },
-  "homepage": "https://github.com/ndokutovich/strapi-provider-email-nodemailer#readme"
+  "homepage": "https://github.com/sboutet06/strapi-provider-email-mailjet#readme"
 }
