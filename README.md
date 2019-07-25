@@ -1,6 +1,6 @@
 # strapi-provider-email-mailjet
 
-[Mailjet](https://mailjet.com/) provider for Strapi with attacments support for latest Strapi versions.
+[Mailjet](https://mailjet.com/) provider for Strapi with attachments support for latest Strapi versions.
 
 Made by [Automat-IT](https://www.automat-it.com/)
 
