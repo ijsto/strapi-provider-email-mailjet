@@ -1,6 +1,6 @@
-# strapi-provider-email-nodemailer
+# strapi-provider-email-mailjet
 
-Nodemailer provider for Strapi with attacments support for latest Strapi versions.
+[Mailjet](https://mailjet.com/) provider for Strapi with attacments support for latest Strapi versions.
 
 Made by [Automat-IT](https://www.automat-it.com/)
 
@@ -17,5 +17,5 @@ Made by [Automat-IT](https://www.automat-it.com/)
 ## Installation
 
 ```bash
-npm i strapi-provider-email-nodemailer
+npm i strapi-provider-email-mailjet
 ```
