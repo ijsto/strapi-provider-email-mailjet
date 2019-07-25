@@ -1,6 +1,6 @@
 {
-  "name": "@sboutet06/strapi-provider-email-mailjet",
-  "version": "1.0.0",
+  "name": "strapi-provider-email-mailjet",
+  "version": "1.1.1",
   "description": "Mailjet provider for Strapi with attachments support for latest Strapi versions.",
   "main": "./lib",
   "directories": {
