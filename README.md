@@ -1,21 +1,36 @@
 # strapi-provider-email-mailjet
 
-[Mailjet](https://mailjet.com/) provider for Strapi with attachments support for latest Strapi versions.
+[Strapi](http://strapi.io/) email service for [Mailjet](https://mailjet.com/)
 
-Made by [Automat-IT](https://www.automat-it.com/)
+# Prerequisites
 
-## Resources
+You will need to have the plugin `strapi-plugin-email` installed in you Strapi project.
 
-- [MIT License](LICENSE.md)
+# Installation
 
-## Links
+```
+# using yarn
+yarn add strapi-provider-email-mailjet
 
-- [Strapi website](http://strapi.io/)
-- [Strapi community on Slack](http://slack.strapi.io)
-- [Strapi news on Twitter](https://twitter.com/strapijs)
-
-## Installation
-
-```bash
+# using npm
 npm i strapi-provider-email-mailjet
 ```
+
+# Configuration
+
+@TODO
+
+### Example
+
+@TODO
+
+# Licence
+
+- [MIT](https://github.com/ijsto/strapi-provider-email-mailjet/blob/master/README.md)
+
+### Credits
+
+Authors:
+[Scott Agirs](https://github.com/scottagirs)
+
+🙌 Initially written by [sboutet06](https://github.com/sboutet06)

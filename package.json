@@ -1,7 +1,11 @@
 {
   "name": "strapi-provider-email-mailjet",
-  "version": "1.1.4",
-  "description": "Mailjet provider for Strapi with attachments support for latest Strapi versions.",
+  "version": "2.0.0",
+  "description": "Strapi Email service provider for Mailjet",
+  "author": {
+    "email": "scott.agirs@gmail.com",
+    "name": "Scott Agirs Neminskis"
+  },
   "main": "./lib",
   "directories": {
     "lib": "./lib"
@@ -14,23 +18,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "strapi",
+    "provider",
+    "email",
+    "mailjet"
+  ],
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sboutet06/strapi-provider-email-mailjet.git"
+    "url": "git://github.com/ijsto/strapi-provider-email-mailjet.git"
   },
-  "keywords": [
-    "Strapi",
-    "Automat-IT",
-    "Email",
-    "Provider"
-  ],
-  "author": "Sébastien Boutet",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sboutet06/strapi-provider-email-mailjet/issues"
+    "url": "https://github.com/ijsto/strapi-provider-email-mailjet/issues"
   },
   "strapi": {
     "isProvider": true
   },
-  "homepage": "https://github.com/sboutet06/strapi-provider-email-mailjet#readme"
+  "homepage": "https://github.com/ijsto/strapi-provider-email-mailjet"
 }
