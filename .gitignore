@@ -3,3 +3,5 @@ node_modules/
 yarn-error.log
 yarn.lock
 test/
+package-lock.json
+yarn.lock
