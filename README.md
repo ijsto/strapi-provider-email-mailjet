@@ -54,6 +54,46 @@ module.exports = ({ env }) => ({
 });
 ```
 
+# Actions API
+
+> Currently Actions are experimental and in Beta, as they depend on PR submitted to Strapi [#7560](https://github.com/strapi/strapi/pull/7560).
+> To implement in your app, you will need to overwrite your strapi-email-plugin and enable `action()` service.
+>
+> If Strapi rejects this PR [#7560](https://github.com/strapi/strapi/pull/7560), Actions API may be deprecated or may not be officially supported.
+> Follow this repo for updates on this.
+
+Takes in an object which must contain `type` to determine action type and supporting data. This API is a subset of the [MailJet API](https://dev.mailjet.com/email/reference/).
+
+## Available Actions
+
+You can request additional actions by submitting a Feature Request or a Pull Request.
+
+### **addContactToList**
+
+| Field  | Type   | Description                          | Required | Default |
+| ------ | ------ | ------------------------------------ | -------- | ------- |
+| listId | String | MailJet List ID to which add contact | yes      |         |
+| id     | String | Contact's email or MailJet ID        | yes      |         |
+
+### **createContact**
+
+| Field | Type   | Description              | Required | Default |
+| ----- | ------ | ------------------------ | -------- | ------- |
+| email | String | Contact's email          | yes      |         |
+| name  | String | Full name of the contact | no       |         |
+
+### **createContactList**
+
+| Field | Type   | Description              | Required | Default |
+| ----- | ------ | ------------------------ | -------- | ------- |
+| name  | String | Name of the contact list | yes      |         |
+
+### **retrieveContact**
+
+| Field     | Type   | Description                   | Required | Default |
+| --------- | ------ | ----------------------------- | -------- | ------- |
+| contactId | String | Contact's email or MailJet ID | yes      |         |
+
 # Licence
 
 - [MIT](https://github.com/ijsto/strapi-provider-email-mailjet/blob/master/LICENSE.md)
