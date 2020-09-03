@@ -54,19 +54,27 @@ module.exports = ({ env }) => ({
 });
 ```
 
-# Actions API
+# API
 
-> Currently Actions are experimental and in Beta, as they depend on PR submitted to Strapi [#7560](https://github.com/strapi/strapi/pull/7560).
-> To implement in your app, you will need to overwrite your strapi-email-plugin and enable `action()` service.
->
-> If Strapi rejects this PR [#7560](https://github.com/strapi/strapi/pull/7560), Actions API may be deprecated or may not be officially supported.
-> Follow this repo for updates on this.
+Strapi Mailjet Plugin enables you to interact with Mailejt API via custom methods listed below.
 
-Takes in an object which must contain `type` to determine action type and supporting data. This API is a subset of the [MailJet API](https://dev.mailjet.com/email/reference/).
+This API is a subset of the [MailJet API](https://dev.mailjet.com/email/reference/).
 
-## Available Actions
+## Available Methods
 
 You can request additional actions by submitting a Feature Request or a Pull Request.
+
+### Usage example
+
+```javascript
+await strapi.plugins.email.provider
+  .addContactToList({
+    id: "email@example.com",
+    listId: "mailingListId",
+  })
+  .catch((error) => console.log(error))
+  .then((response) => console.log(response));
+```
 
 ### **addContactToList**
 
@@ -94,6 +102,8 @@ You can request additional actions by submitting a Feature Request or a Pull Req
 | --------- | ------ | ----------------------------- | -------- | ------- |
 | contactId | String | Contact's email or MailJet ID | yes      |         |
 
+---
+
 # Licence
 
 - [MIT](https://github.com/ijsto/strapi-provider-email-mailjet/blob/master/LICENSE.md)
@@ -103,4 +113,4 @@ You can request additional actions by submitting a Feature Request or a Pull Req
 Authors:
 [Scott Agirs](https://github.com/scottagirs)
 
-Package initially published by [sboutet06](https://github.com/sboutet06)
+Initially published by [sboutet06](https://github.com/sboutet06)
