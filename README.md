@@ -56,7 +56,7 @@ module.exports = ({ env }) => ({
 
 # API
 
-Strapi Mailjet Plugin enables you to interact with Mailejt API via custom methods listed below.
+Strapi Mailjet Plugin enables you to interact with Mailjet API via custom methods listed below.
 
 This API is a subset of the [MailJet API](https://dev.mailjet.com/email/reference/).
 
@@ -65,6 +65,8 @@ This API is a subset of the [MailJet API](https://dev.mailjet.com/email/referenc
 You can request additional actions by submitting a Feature Request or a Pull Request.
 
 ### Usage example
+
+> Note: To access the custom methods API, you need to call it vai `strapi.plugins.email.provider.CUSTOM_METHOD` and NOT `strapi.plugins.email.services.email.CUSTOM_METHOD`
 
 ```javascript
 await strapi.plugins.email.provider
