@@ -98,11 +98,25 @@ await strapi.plugins.email.provider
 | ----- | ------ | ------------------------ | -------- | ------- |
 | name  | String | Name of the contact list | yes      |         |
 
+### **removeContactFromList**
+
+| Field  | Type   | Description                                  | Required | Default |
+| ------ | ------ | -------------------------------------------- | -------- | ------- |
+| listId | String | MailJet List ID from which to remove contact | yes      |         |
+| id     | String | Contact's email or MailJet ID                | yes      |         |
+
 ### **retrieveContact**
 
 | Field     | Type   | Description                   | Required | Default |
 | --------- | ------ | ----------------------------- | -------- | ------- |
 | contactId | String | Contact's email or MailJet ID | yes      |         |
+
+### **unsubscribeContactFromList**
+
+| Field  | Type   | Description                                       | Required | Default |
+| ------ | ------ | ------------------------------------------------- | -------- | ------- |
+| listId | String | MailJet List ID from which to unsubscribe contact | yes      |         |
+| id     | String | Contact's email or MailJet ID                     | yes      |         |
 
 ---
 
