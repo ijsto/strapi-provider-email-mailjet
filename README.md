@@ -111,6 +111,15 @@ await strapi.plugins.email.provider
 | --------- | ------ | ----------------------------- | -------- | ------- |
 | contactId | String | Contact's email or MailJet ID | yes      |         |
 
+### **subscribeContactFromList**
+
+Use this to re-subscribe existing contact.
+
+| Field  | Type   | Description                                       | Required | Default |
+| ------ | ------ | ------------------------------------------------- | -------- | ------- |
+| listId | String | MailJet List ID to which to subscribe the contact | yes      |         |
+| id     | String | Contact's email or MailJet ID                     | yes      |         |
+
 ### **unsubscribeContactFromList**
 
 | Field  | Type   | Description                                       | Required | Default |
