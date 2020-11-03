@@ -111,7 +111,7 @@ await strapi.plugins.email.provider
 | --------- | ------ | ----------------------------- | -------- | ------- |
 | contactId | String | Contact's email or MailJet ID | yes      |         |
 
-### **subscribeContactFromList**
+### **subscribeContactToList**
 
 Use this to re-subscribe existing contact.
 
