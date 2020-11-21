@@ -1,6 +1,6 @@
 {
   "name": "strapi-provider-email-mailjet",
-  "version": "3.2.2",
+  "version": "3.3.0",
   "description": "Strapi Email service provider for Mailjet",
   "author": {
     "email": "scott.agirs@gmail.com",

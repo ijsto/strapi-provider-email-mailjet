@@ -60,7 +60,41 @@ Strapi Mailjet Plugin enables you to interact with Mailjet API via custom method
 
 This API is a subset of the [MailJet API](https://dev.mailjet.com/email/reference/).
 
-## Available Methods
+## Sending API
+
+You can easily send emails via
+
+### Usage example
+
+**Single recipient**
+
+```javascript
+await strapi.plugins.email.services.email.send({
+  to: "scott@ijs.to",
+  toName: "Scott Agirs",
+  subject: "👋 Hey there!",
+  text: `Text version of your email`,
+  html: `<html />`,
+});
+```
+
+**Multiple recipients**
+
+Note taht `toName` is not used here, instead it's added to each recipient object of the array.
+
+```javascript
+await strapi.plugins.email.services.email.send({
+  to: [
+    { email: "scott@ijs.to", toName: "Scott Agirs" },
+    { email: "chili@spice.oo", toName: "🦄" },
+  ],
+  subject: "👋 Hey y'all!",
+  text: `Text version of your email`,
+  html: `<html />`,
+});
+```
+
+## Custom Methods
 
 You can request additional actions by submitting a Feature Request or a Pull Request.
 
