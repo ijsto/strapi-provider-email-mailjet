@@ -18,17 +18,19 @@ npm i strapi-provider-email-mailjet
 
 # Configuration
 
-| Variable                     | Type   | Description                                                                                   | Required | Default   |
-| ---------------------------- | ------ | --------------------------------------------------------------------------------------------- | -------- | --------- |
-| provider                     | string | The name of the provider you use                                                              | yes      |           |
-| providerOptions              | object | Provider options                                                                              | yes      |           |
-| providerOptions.publicApiKey | string | Mailjet public API key. See your [MailJet API keys](https://app.mailjet.com/account/api_keys) | yes      |           |
-| providerOptions.secretApiKey | string | Mailjet secret API key. See your [MailJet API keys](https://app.mailjet.com/account/api_keys) | yes      |           |
-| settings                     | object | Settings                                                                                      | no       | {}        |
-| settings.defaultFrom         | string | Default sender mail address                                                                   | yes      | undefined |
-| settings.defaultFromName     | string | Default sender name                                                                           | yes      | undefined |
-| settings.defaultTo           | string | Default receiver mail address                                                                 | yes      | undefined |
-| settings.defaultToName       | string | Default receiver name                                                                         | yes      | undefined |
+| Variable                          | Type   | Description                                                                                   | Required | Default   |
+| --------------------------------- | ------ | --------------------------------------------------------------------------------------------- | -------- | --------- |
+| provider                          | string | The name of the provider you use                                                              | yes      |           |
+| providerOptions                   | object | Provider options                                                                              | yes      |           |
+| providerOptions.publicApiKey      | string | Mailjet public API key. See your [MailJet API keys](https://app.mailjet.com/account/api_keys) | yes      |           |
+| providerOptions.secretApiKey      | string | Mailjet secret API key. See your [MailJet API keys](https://app.mailjet.com/account/api_keys) | yes      |           |
+| settings                          | object | Settings                                                                                      | no       | {}        |
+| settings.defaultFrom              | string | Default sender mail address                                                                   | yes      | undefined |
+| settings.defaultFromName          | string | Default sender name                                                                           | yes      | undefined |
+| settings.defaultTo                | string | Default receiver mail address                                                                 | yes      | undefined |
+| settings.defaultToName            | string | Default receiver name                                                                         | yes      | undefined |
+| settings.defaultTemplateID        | number | Default Template transactionnel ID                                                            | no       | undefined |
+| settings.defaultTemplateLanguage  | bolean | Default Template language                                                                     | no       | undefined |
 
 ### Example config file
 
@@ -48,6 +50,8 @@ module.exports = ({ env }) => ({
       defaultFromName: "Scott from iJS.to",
       defaultTo: "john.doe@ijs.to",
       defaultToName: "Johnny Bravodoe",
+      defaultTemplateID: ID,
+      defaultTemplateLanguage: true,
     },
   },
   // ...
