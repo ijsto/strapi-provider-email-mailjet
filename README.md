@@ -126,6 +126,13 @@ await strapi.plugins.email.provider
 | email | String | Contact's email          | yes      |         |
 | name  | String | Full name of the contact | no       |         |
 
+### **updateContact**
+
+| Field | Type   | Description                                                                                                                           | Required | Default |
+| ----- | ------ | ------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------- |
+| data  | object | Contact Metadata. [API Reference](https://dev.mailjet.com/email/reference/contacts/contact-properties/#v3_put_contactdata_contact_ID) | yes      |         |
+| id    | String | Contact's email or MailJet ID                                                                                                         | yes      |         |
+
 ### **createContactList**
 
 | Field | Type   | Description              | Required | Default |
