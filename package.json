@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.15",
-    "node-mailjet": "https://github.com/mailjet/mailjet-apiv3-nodejs.git#v3.3.1"
+    "node-mailjet": "^3.3.4"
   },
   "devDependencies": {
     "@ijsto/eslint-config": "^2.1.3",
