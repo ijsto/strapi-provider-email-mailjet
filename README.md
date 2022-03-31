@@ -38,19 +38,21 @@ Path - `config/plugins.js`
 module.exports = ({ env }) => ({
   // ...
   email: {
-    provider: "mailjet",
-    providerOptions: {
-      publicApiKey: env("MAILJET_PUBLIC_KEY"),
-      secretApiKey: env("MAILJET_SECRET_KEY"),
-    },
-    settings: {
-      defaultFrom: "scott@ijs.to",
-      defaultFromName: "Scott from iJS.to",
-      defaultTo: "john.doe@ijs.to",
-      defaultToName: "Johnny Bravodoe",
-    },
-  },
-  // ...
+    config: {
+      provider: "strapi-provider-email-mailjet",
+        providerOptions: {
+          publicApiKey: env("MAILJET_PUBLIC_KEY"),
+          secretApiKey: env("MAILJET_SECRET_KEY"),
+        },
+        settings: {
+          defaultFrom: "scott@ijs.to",
+          defaultFromName: "Scott from iJS.to",
+          defaultTo: "john.doe@ijs.to",
+          defaultToName: "Johnny Bravodoe",
+        },
+      },
+      // ...
+    }
 });
 ```
 
